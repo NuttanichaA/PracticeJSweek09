@@ -17,7 +17,8 @@ class Todo{
 function todoListManagemennt(){
     const todos = []
 
-    function addTodo(desc = 'empty task'){
+    function addTodo(desc){
+        if((typeof desc) != 'string') desc = 'empty task'
         const todo = new Todo(desc)
         todos.push(todo);
         return todos.length
