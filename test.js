@@ -11,9 +11,9 @@ function x(arg){
 }
 
 const std = {id: 1}
-console.log(x(std.id))
+x(std)
 console.log(std)
-
+console.log('----------------');
 
 const value = 10
 function x(num) { // outer func
@@ -87,3 +87,10 @@ function testArg(a,b,...c){
     console.log(test)
 }
 testArg(2,10,{id: 1, name: 'Somchai'},'apple',25)
+console.log('----------------')
+let testG = 1
+function plusOne(){
+    testG++
+}
+plusOne()
+console.log(testG);

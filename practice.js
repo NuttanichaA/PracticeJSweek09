@@ -1,7 +1,7 @@
 class Todo{
-    static #nextId = 1
+    static nextId = 1
     constructor (description){
-        this.id = Todo.#nextId++
+        this.id = Todo.nextId++
         this.description = description
     }
 
